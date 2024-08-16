@@ -1,38 +1,335 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Box{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: rgba(54, 54, 54, 0.493);
+  justify-content: space-between;
+  height: 50px;
+  padding: 5px;
+}
+
+
+.body1 img{
+  width: 80px;
+  height: 80px;
+}
+
+.body1 text{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.body1{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flu{
+font-size: 20px;
+font-weight: bold;
+color: red !important;
+cursor: pointer;
 }
+.hr{
+  color: rgb(38, 0, 255) !important;
+  height: 0.1px;
+  margin: 0;
+}
+.docs{
+/* font-weight: bold; */
+font-family: "Outfit";
+font-size: 14px;
+color: rgb(255, 247, 247) !important;
+margin-left:20px;
+cursor: pointer;
+}
+
+.body2 input{
+  outline: none;
+  color: white;
+  width: 200px;
+  border: none;
+  padding: 4px;
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.436);
+  margin-right:10px;
+}
+
+.body2{
+  display: flex;
+  align-items: center;
+}
+
+.body2 img{
+  width: 23px;
+  margin-left: 10px;
+  height: 23px;
+}
+
+
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* This will make the middle section take up the full height of the viewport */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 {
+  /* background-color: #fff; */
+  padding: 2rem;
+  width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.box2 h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 60px;
+}
+
+.box2 p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.button{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.button button {
+  color: #000000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btnGithub{
+  background: rgba(0, 0, 0, 0.82);
+  margin-left:10px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.btnGithub img{
+  width: 20px;
+  height: 20px;
+}
+
+
+
+/* start Docs Css */
+
+.Content {
+  background-color: lightgray;
+  width: 100%;
+  height: 89vh;
+  display: flex;
+}
+
+.first{
+  background-color: red;
+  width: 20%;
+  height: 89vh;
+  overflow-y: scroll;
+
+}
+
+.first::-webkit-scrollbar {
+  width: 2px;
+}
+
+.first::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.first::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 1px;
+}
+
+.first::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+/* Firefox */
+/* .first {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #f1f1f1;
+} */
+
+/* Internet Explorer 10+ */
+.first {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.list{
+ margin: 20px;
+}
+.list p{
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.list p:hover{
+  text-decoration:2px underline black;
+}
+
+.second{
+  width: 80%;
+  height: 89vh;
+  overflow-y: scroll;
+}
+
+.innerSecond{
+  margin: 20px;
+  width: 90%;
+}
+
+.list h4{
+  color: white;
+}
+
+.second::-webkit-scrollbar {
+  width: 2px;
+}
+
+.second::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.second::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 1px;
+}
+
+.second::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+/* Firefox */
+/* .first {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #f1f1f1;
+} */
+
+/* Internet Explorer 10+ */
+.second {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* Alert Css */
+.importZhen{
+  height: 100px;
+  width: 80%;
+  border-radius: 10px; /* Adjust this value to increase or decrease the rounding */
+  overflow: hidden;
+}
+.FullCodeGB{
+  border-radius: 10px; /* Adjust this value to increase or decrease the rounding */
+  overflow: hidden;
+  width: 40%;
+  height: 40%;
+}
+
+.autoResult{
+  border-radius: 10px; /* Adjust this value to increase or decrease the rounding */
+  overflow: hidden;
+  height: 150px;
+  width: 80%;
+}
+
+
+
+
+.code-snippet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 90%;
+ 
+}
+
+.code-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f8f9fa;
+  width: 100%;
+  overflow-y: scroll; 
+  max-height: 400px; 
+}
+
+.copy-button {
+  border-radius: 10px; /* Adjust this value to increase or decrease the rounding */
+    overflow: hidden; 
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* .code-box:hover {
+  background-color: #0056b3;
+} */
+
+.code-box::-webkit-scrollbar {
+  width: 2px;
+}
+
+.code-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.code-box::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 1px;
+}
+
+.code-box::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+/* Firefox */
+/* .first {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #f1f1f1;
+} */
+
+/* Internet Explorer 10+ */
+.code-box {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.rounded-image {
+  border-radius: 10px; /* Adjust this value to increase or decrease the rounding */
+  overflow: hidden; /* This ensures the image doesn't overflow the rounded corners */
+}
+
+

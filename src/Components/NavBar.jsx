@@ -36,11 +36,11 @@ function NavBar() {
            <text className='docs' onClick={goToAbout}>Docs</text>
            <text div className='docs' onClick={handleClick}>GITHUB</text>
         </div>
-         <div className='body2'>
-          <input type='text' placeholder='Search Documentation'></input>
+        <div className='body2'>
+          {/* <input type='text' placeholder='Search Documentation'></input> */}
           <img src={github} alt='' onClick={handleClick}/>
-          <img src={twitter} alt='' onClick={handleTwitter}/>
-         </div>
+         <img src={twitter} alt='' onClick={handleTwitter}/>
+         </div> 
         </div>
     </div>
   )

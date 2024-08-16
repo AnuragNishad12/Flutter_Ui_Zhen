@@ -61,7 +61,7 @@ function Docs() {
         <p onClick={()=>setSelectedComponent('Progress_Bar')}>Circular Progress Bar</p>
         <p onClick={()=> setSelectedComponent('ComboBox')}>ComboBox</p>
         <p onClick={()=> setSelectedComponent('Search')}>Search Box</p>
-        <p>Date Picker</p>
+        {/* <p>Date Picker</p>
         <p>Dialog</p>
         <p>Drawer</p>
         <p>Dropdown Menu</p>
@@ -73,7 +73,7 @@ function Docs() {
         <p>Radio Group</p>
         <p>Toast</p>
         <p>SnackBar</p>
-        <p>Select</p>
+        <p>Select</p> */}
        </div>
        </div>
        <div className='second'>
